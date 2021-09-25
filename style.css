@@ -959,7 +959,7 @@ position: relative;
       .blog-info{
          display:flex;
          justify-content: space-between;
-         
+         margin-right: 25px;
          margin-left: 25px;
          margin-top: 0;
          padding-bottom: 0;
