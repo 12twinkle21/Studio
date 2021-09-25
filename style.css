@@ -1264,7 +1264,7 @@ position: relative;
     
      @media(max-width: 855px){
       .header-title{
-         margin-left:0;
+         margin-left: 0;
          margin: 0 auto;
          width: 100%;
       }
@@ -1294,6 +1294,10 @@ position: relative;
       .review{
          margin-top: 50px;
       }
+      .header-bottom{
+         padding-left: 15px;
+      }
+      
      }
 
      @media(max-width: 750px){
