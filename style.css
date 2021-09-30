@@ -482,9 +482,11 @@ background-color: #f6f6f6;
 
 .small-images-and-arrows{
    width: 50%;
+   overflow: hidden;
 }
 .big-images{
    width: 50%;
+   padding-left: 10px;
 }
 .big-image{
    width: 100%;
@@ -493,47 +495,30 @@ background-color: #f6f6f6;
 
 .first-row{
    display:flex;
+   transition: all ease 1s;
 }
 .second-row{
    display:flex;
+   transition: all ease 1s;
+  
 }
 
-.service-image-1{
-   width: 50%;
+
+.services-image{
+   min-width: 50%;
    margin-right: 10px;
 }
-.service-image-2{
-   width: 50%;
-   margin-right: 10px;
-}
-.service-image-3{
-   width: 50%;
-   margin-right: 10px;
-}
-.service-image-4{
-   width: 50%;
-   margin-right: 10px;
-}
-.image-1{
-   width: 100%;
-   
-}
-.image-2{
+.image{
    width: 100%;
 }
-.image-3{
-   width: 100%;
-}
-.image-4{
-   width: 100%;
-}
+
 
 .third-row{
    display:flex;
    height: 40px;
 }
 .arrow-left{
-   width: 50%;
+   min-width: 50%;
    margin-right: 10px;
    text-align: center;
    background-color: #f6f6f6;
@@ -542,7 +527,7 @@ background-color: #f6f6f6;
    margin-top:12px;
 }
 .arrow-right{
-   width: 50%;
+   min-width: 50%;
    margin-right: 10px;
    text-align: center;
    background-color: #f6f6f6;
@@ -553,9 +538,6 @@ background-color: #f6f6f6;
 .services-arrows:hover{
    background-color: #bcbcbc;
    cursor: pointer;
-}
-.services-arrows:active{
-   background-color: #bcbcbc;
 }
 
 /* Services-burger */
@@ -571,6 +553,7 @@ background-color: #f6f6f6;
    z-index: 1000;
    cursor: pointer;
    display: none;
+   z-index: 1000;
 }
 .services-burger-item{
    display:block;
@@ -583,6 +566,7 @@ background-color: #f6f6f6;
    right: 0;
    bottom: 0;
    margin: auto;
+   z-index: 1000;
 }
 .services-burger-item::after,
 .services-burger-item::before{
@@ -606,6 +590,7 @@ background-color: #f6f6f6;
    background-color: #FFFAFA;
    top:0;
    right: 0;
+   z-index: 100;
 }
 .services-menu a:hover{
    border-bottom: 2px solid #DC143C;
@@ -1310,12 +1295,7 @@ position: relative;
         .big-images{
            display:none;
         }
-        .service-image-2{
-           margin-right: 0;
-        }
-        .service-image-4{
-         margin-right: 0;
-      }
+      
          .arrow-right{
          margin-right: 0;
        }
