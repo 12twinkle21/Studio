@@ -1424,6 +1424,9 @@ position: relative;
      .ul-container{
       width: 60%;
    }
+   .radios{
+      display: none;
+   }
    }
 
    @media(max-width: 570px){
