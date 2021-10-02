@@ -799,20 +799,23 @@ position: relative;
       line-height: 32px;
       font-weight: 400;
    }
+   .container-clients{
+      overflow: hidden;
+   }
    .clients-items{
       display:flex;
       margin-top: 65px;
+      transition: all ease 1s;
    }
-   .client-item-1{
-      width: 33.333%;
-      margin-right: 20px;
+   .client-item{
+      min-width: 33.333%;
+      margin-right: 10px;
    }
-   .client-item-2{
-      width: 33.333%;
-      margin-right: 20px;
+   .client-item:last-child{
+      margin-right: 0;
    }
    .client-item-3{
-      width: 33.333%;
+      margin-right: 110px;
    }
    .client-item-info{
       display:flex;
@@ -851,14 +854,26 @@ position: relative;
       width: 60px;
       margin-top: 50px;
       margin-bottom: 140px;
+      display:flex;
    }
-   .radio-1{
+   
+   .radio{
       margin-right: 10px;
+      display:block;
+      background-color: gainsboro;
+      border-radius: 50%;
+      height: 10px;
+      width: 10px;
+      cursor: pointer;
    }
-   .radio-2{
-      margin-right: 10px;
+   .radio-active{
+      background-color: black;
+      border: 2px solid red;
    }
-
+   .radio-3{
+      margin-right: 0;
+   }
+   
    /* About us*/
 
       .about-us{
@@ -1179,7 +1194,8 @@ position: relative;
       .headshots-text::before{
          display:none;
       }
-
+      
+     
      } 
 
   
@@ -1207,10 +1223,7 @@ position: relative;
            margin-left: 10px;
            margin-right: 10px;
         }
-        .clients{
-         padding-left: 0;
-         padding-right: 0;
-      }
+       
       .about-us{
          padding-left: 0;
          padding-right: 0;
@@ -1218,6 +1231,7 @@ position: relative;
       .ul-container{
          width: 80%;
       }
+     
      }
     
      
@@ -1241,10 +1255,7 @@ position: relative;
         .blog-info time{
            text-align: center;
         }
-        .client-item-1,
-        .client-item-2{
-           margin-right: 10px;
-        }
+        
      }
     
      @media(max-width: 855px){
@@ -1333,18 +1344,11 @@ position: relative;
        .clients-items{
           display: block;
        }
-       .client-item-1{
-          width: 100%;
-          margin-bottom: 50px;
-          margin-right: 0;
-       }
-       .client-item-2{
+       
+      .client-item{
          width: 100%;
          margin-bottom: 50px;
          margin-right: 0;
-      }
-      .client-item-3{
-         width: 100%;
       }
       .about-us-items{
          display: block;
