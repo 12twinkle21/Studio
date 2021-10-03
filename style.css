@@ -44,6 +44,8 @@ margin: 0;
 .no-active{
    display: none;
 }
+
+
 /* Header */
 
 .header-top{
@@ -507,6 +509,7 @@ background-color: #f6f6f6;
 .services-image{
    min-width: 50%;
    margin-right: 10px;
+   cursor: pointer;
 }
 .image{
    width: 100%;
@@ -855,6 +858,7 @@ position: relative;
       margin-top: 50px;
       margin-bottom: 140px;
       display:flex;
+      
    }
    
    .radio{
@@ -870,7 +874,10 @@ position: relative;
       background-color: black;
       border: 2px solid red;
    }
-   .radio-3{
+   .radio-1{
+      margin-left: 12px;
+   }
+   .radio-2{
       margin-right: 0;
    }
    
@@ -1353,6 +1360,9 @@ position: relative;
       .about-us-items{
          display: block;
       }
+      .clients{
+         padding-bottom: 100px;
+      }
       .about-us h2{
          text-align: center;
          width: auto;
@@ -1426,6 +1436,9 @@ position: relative;
    }
    .radios{
       display: none;
+   }
+   .services-image{
+      cursor:unset;
    }
    }
 
@@ -1528,3 +1541,5 @@ position: relative;
          padding-right: 20px;
       }
    }
+
+   

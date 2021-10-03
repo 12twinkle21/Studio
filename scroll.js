@@ -35,7 +35,6 @@ for (let i = 0; i < mainNavBtn.length; i++){
 
 
 let burgerTopBtn = document.querySelectorAll('.burger-top-btn');
-console.log(burgerTopBtn);
 for (let i = 0; i < burgerTopBtn.length; i++) {
    
    burgerTopBtn[i].addEventListener('click', function (evt) {
