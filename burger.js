@@ -30,7 +30,7 @@ servicesBtn.addEventListener('click', function (evt) {
 body.addEventListener('click', function () {
    if (burgerMenu.classList.contains('active-menu')) {
       burgerMenu.classList.remove('active-menu');
-      burgerMenu.classList.add('no-active')
+      burgerMenu.classList.add('no-active');
    }
    if (servicesMenu.classList.contains('active-menu')) {
       servicesMenu.classList.remove('active-menu');
