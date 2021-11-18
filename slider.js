@@ -6,6 +6,8 @@ let width;
 let count = 0;
 let arrowRight = document.querySelector('.arrow-right')
 let arrowLeft = document.querySelector('.arrow-left')
+let arrowLeftImg = document.querySelector('.arrow-left-img');
+let arrowRightImg = document.querySelector('.arrow-right-img');
 
 function init() {
    for (let i = 0; i < imagesOfFirstRow.length; i++) {
@@ -23,6 +25,14 @@ arrowRight.addEventListener('click', function (evt) {
       count--;
    }
    rollSliderRight(width);
+   if (count > 0) {
+      arrowLeftImg.src = 'img/arrow-left.png';
+      arrowLeft.classList.add('active-cursor');
+      arrowRight.classList.remove('active-cursor');
+   }
+   if (count == 1) {
+      arrowRightImg.src = 'img/arrow-right-no-active.png';
+   }
 });
 
 arrowLeft.addEventListener('click', function (evt) {
@@ -33,6 +43,12 @@ arrowLeft.addEventListener('click', function (evt) {
    }
    if (count < 0) {
       count++;
+   }
+   if (count == 0) {
+      arrowRightImg.src = 'img/arrow-right.png';
+      arrowLeftImg.src = 'img/arrow-left-no-active.png';
+      arrowRight.classList.add('active-cursor');
+      arrowLeft.classList.remove('active-cursor');
    }
    rollSliderLeft(width);
 });
@@ -104,4 +120,8 @@ window.addEventListener('resize', function () {
    if (count > 0) {  
       rollSliderRight(width);
    }
+   if (document.documentElement.clientWidth < 755) {
+      rollCarousel1();
+   }
 });
+

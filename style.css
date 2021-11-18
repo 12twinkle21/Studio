@@ -44,7 +44,11 @@ margin: 0;
 .no-active{
    display: none;
 }
-
+.active-menu{
+   display:block;
+   animation-duration: 0.5s;
+   animation-name: menu-slide;
+}
 
 /* Header */
 
@@ -538,7 +542,7 @@ background-color: #f6f6f6;
 .arrow-right img{
    margin-top: 12px;
 }
-.services-arrows:hover{
+.active-cursor:hover{
    background-color: #bcbcbc;
    cursor: pointer;
 }
@@ -1542,4 +1546,14 @@ position: relative;
       }
    }
 
-   
+   /* Animations */
+
+   @keyframes menu-slide {
+      from {
+       left: -1000px;
+      }
+    
+      to {
+        left: 0;
+      }
+    }
